@@ -3,5 +3,5 @@ class Micropost < ApplicationRecord
     #キーワード シンボル(:xxxxx)
     belongs_to :user
     #validates  シンボル,　チェック処理名: {プロパティ：設定値 } 
-    validates :content, length: {maximum: 140}
+    validates :content, length: {maximum: 140}, presence: true
 end
